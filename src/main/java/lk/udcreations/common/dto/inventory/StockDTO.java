@@ -12,4 +12,11 @@ public class StockDTO {
 		this.quantity = quantity;
 	}
 
+	public StockDTO(int quantity) {
+		super();
+		this.quantity = quantity;
+	}
+	
+	
+
 }
