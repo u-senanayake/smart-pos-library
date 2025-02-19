@@ -2,7 +2,7 @@ package lk.udcreations.common.dto.user;
 
 import java.time.LocalDateTime;
 
-import lk.udcreations.common.dto.role.UserRoleDTO;
+import lk.udcreations.common.dto.role.RoleDTO;
 
 
 public class UsersDTO {
@@ -16,7 +16,7 @@ public class UsersDTO {
 	private String phoneNo1;
 	private String phoneNo2;
 
-	private UserRoleDTO role;
+	private RoleDTO role;
 
 	private boolean enabled = true;
 	private boolean locked = false;
@@ -78,12 +78,11 @@ public class UsersDTO {
 	public void setPhoneNo2(String phoneNo2) {
 		this.phoneNo2 = phoneNo2;
 	}
-
-	public UserRoleDTO getRole() {
+		
+	public RoleDTO getRole() {
 		return role;
 	}
-
-	public void setRole(UserRoleDTO role) {
+	public void setRole(RoleDTO role) {
 		this.role = role;
 	}
 	public boolean isEnabled() {
@@ -140,9 +139,9 @@ public class UsersDTO {
 	public void setDeletedUser(CreatedUpdatedUserDTO deletedUser) {
 		this.deletedUser = deletedUser;
 	}
-
+	
 	public UsersDTO(Integer userId, String username, String firstName, String lastName, String email, String address,
-			String phoneNo1, String phoneNo2, UserRoleDTO role, boolean enabled, boolean locked, boolean deleted,
+			String phoneNo1, String phoneNo2, RoleDTO role, boolean enabled, boolean locked, boolean deleted,
 			LocalDateTime createdAt, LocalDateTime updatedAt, LocalDateTime deletedAt,
 			CreatedUpdatedUserDTO createdUser, CreatedUpdatedUserDTO updatedUser, CreatedUpdatedUserDTO deletedUser) {
 		super();
@@ -165,7 +164,6 @@ public class UsersDTO {
 		this.updatedUser = updatedUser;
 		this.deletedUser = deletedUser;
 	}
-
 	public UsersDTO() {
 		super();
 	}

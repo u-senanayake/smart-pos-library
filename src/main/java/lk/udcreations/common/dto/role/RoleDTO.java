@@ -92,6 +92,13 @@ public class RoleDTO {
 		this.deletedAt = deletedAt;
 	}
 
+	public RoleDTO(Integer roleId, String roleName, String description) {
+		super();
+		this.roleId = roleId;
+		this.roleName = roleName;
+		this.description = description;
+	}
+
 	public RoleDTO() {
 		super();
 	}
