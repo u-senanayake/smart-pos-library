@@ -79,17 +79,14 @@ public class RoleDTO {
 		this.deletedAt = deletedAt;
 	}
 
-	public RoleDTO(Integer roleId, String roleName, String description, boolean enabled, boolean deleted,
-			LocalDateTime createdAt, LocalDateTime updatedAt, LocalDateTime deletedAt) {
+
+
+	public RoleDTO(Integer roleId, String roleName, String description, boolean enabled) {
 		super();
 		this.roleId = roleId;
 		this.roleName = roleName;
 		this.description = description;
 		this.enabled = enabled;
-		this.deleted = deleted;
-		this.createdAt = createdAt;
-		this.updatedAt = updatedAt;
-		this.deletedAt = deletedAt;
 	}
 
 	public RoleDTO(Integer roleId, String roleName, String description) {
@@ -98,6 +95,7 @@ public class RoleDTO {
 		this.roleName = roleName;
 		this.description = description;
 	}
+
 
 	public RoleDTO() {
 		super();

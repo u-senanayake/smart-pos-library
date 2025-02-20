@@ -2,25 +2,13 @@ package lk.udcreations.common.dto.inventory;
 
 import java.time.LocalDateTime;
 
+import lk.udcreations.common.dto.product.ProductDTO;
+
 public class InventoryDTO {
 
 	private Integer inventoryId;
 
-	private Integer productId;
-
-	private String productStringId;
-
-	private String prductSku;
-
-	private String productName;
-
-	private Integer categoryId;
-
-	private String categoryName;
-
-	private Integer distributorId;
-
-	private String distributorName;
+	private ProductDTO product;
 
 	private Integer quantity;
 
@@ -55,72 +43,16 @@ public class InventoryDTO {
 		this.inventoryId = inventoryId;
 	}
 
-	public Integer getProductId() {
-		return productId;
-	}
-
-	public void setProductId(Integer productId) {
-		this.productId = productId;
-	}
-
-	public String getProductStringId() {
-		return productStringId;
-	}
-
-	public void setProductStringId(String productStringId) {
-		this.productStringId = productStringId;
-	}
-
-	public String getPrductSku() {
-		return prductSku;
-	}
-
-	public void setPrductSku(String prductSku) {
-		this.prductSku = prductSku;
-	}
-
-	public String getProductName() {
-		return productName;
-	}
-
-	public void setProductName(String productName) {
-		this.productName = productName;
-	}
-
-	public Integer getCategoryId() {
-		return categoryId;
-	}
-
-	public void setCategoryId(Integer categoryId) {
-		this.categoryId = categoryId;
-	}
-
-	public String getCategoryName() {
-		return categoryName;
-	}
-
-	public void setCategoryName(String categoryName) {
-		this.categoryName = categoryName;
-	}
-
-	public Integer getDistributorId() {
-		return distributorId;
-	}
-
-	public void setDistributorId(Integer distributorId) {
-		this.distributorId = distributorId;
-	}
-
-	public String getDistributorName() {
-		return distributorName;
-	}
-
-	public void setDistributorName(String distributorName) {
-		this.distributorName = distributorName;
-	}
-
 	public Integer getQuantity() {
 		return quantity;
+	}
+
+	public ProductDTO getProduct() {
+		return product;
+	}
+
+	public void setProduct(ProductDTO product) {
+		this.product = product;
 	}
 
 	public void setQuantity(Integer quantity) {

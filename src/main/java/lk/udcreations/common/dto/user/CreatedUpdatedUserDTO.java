@@ -57,4 +57,8 @@ public class CreatedUpdatedUserDTO {
 		this.email = email;
 	}
 
+	public CreatedUpdatedUserDTO() {
+		super();
+	}
+
 }

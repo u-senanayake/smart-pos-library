@@ -2,13 +2,16 @@ package lk.udcreations.common.dto.salesitems;
 
 import java.math.BigDecimal;
 
-import lk.udcreations.common.dto.product.SalesItemsProductDTO;
+import lk.udcreations.common.dto.product.ProductDTO;
 
 public class SalesItemDTO {
 
 	private Integer salesItemId;
 	private Integer saleId;
-	private SalesItemsProductDTO product;
+
+//	private SalesItemsProductDTO product;
+	private ProductDTO product;
+
 	private int quantity;
 	private int returnedQuantity;
 	private BigDecimal pricePerunit;
@@ -29,15 +32,24 @@ public class SalesItemDTO {
 		this.saleId = saleId;
 	}
 
-	public SalesItemsProductDTO getProduct() {
+//	public SalesItemsProductDTO getProduct() {
+//		return product;
+//	}
+//
+//	public void setProduct(SalesItemsProductDTO product) {
+//		this.product = product;
+//	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public ProductDTO getProduct() {
 		return product;
 	}
 
-	public void setProduct(SalesItemsProductDTO product) {
+	public void setProduct(ProductDTO product) {
 		this.product = product;
-	}
-	public int getQuantity() {
-		return quantity;
 	}
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;

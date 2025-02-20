@@ -2,17 +2,14 @@ package lk.udcreations.common.dto.product;
 
 import java.math.BigDecimal;
 
-import lk.udcreations.common.dto.category.CategoryDTO;
-import lk.udcreations.common.dto.distributor.DistributorDTO;
-
 
 public class CreateProductDTO {
 
 	private String productName;
 	private String description;
 	private String sku;
-	private CategoryDTO category;
-	private DistributorDTO distributor;
+	private Integer categoryId;
+	private Integer distributorId;
 	private BigDecimal price;
 	private BigDecimal costPrice;
 	private BigDecimal minPrice;
@@ -48,24 +45,24 @@ public class CreateProductDTO {
 		this.sku = sku;
 	}
 
-	public CategoryDTO getCategory() {
-		return category;
-	}
-
-	public void setCategory(CategoryDTO category) {
-		this.category = category;
-	}
-
-	public DistributorDTO getDistributor() {
-		return distributor;
-	}
-
-	public void setDistributor(DistributorDTO distributor) {
-		this.distributor = distributor;
-	}
-
 	public BigDecimal getPrice() {
 		return price;
+	}
+
+	public Integer getCategoryId() {
+		return categoryId;
+	}
+
+	public void setCategoryId(Integer categoryId) {
+		this.categoryId = categoryId;
+	}
+
+	public Integer getDistributorId() {
+		return distributorId;
+	}
+
+	public void setDistributorId(Integer distributorId) {
+		this.distributorId = distributorId;
 	}
 
 	public void setPrice(BigDecimal price) {
@@ -138,18 +135,12 @@ public class CreateProductDTO {
 		this.initialStock = initialStock;
 	}
 
-
 	@Override
 	public String toString() {
 		return "CreateProductDTO [productName=" + productName + ", description=" + description + ", sku=" + sku
-				+ ", category=" + category + ", distributor=" + distributor + ", price=" + price + ", costPrice="
-				+ costPrice + ", minPrice=" + minPrice + ", stockWarningLevel=" + stockWarningLevel
+				+ ", categoryId=" + categoryId + ", distributorId=" + distributorId + ", price=" + price
+				+ ", costPrice=" + costPrice + ", minPrice=" + minPrice + ", stockWarningLevel=" + stockWarningLevel
 				+ ", stockAlertLevel=" + stockAlertLevel + ", manufactureDate=" + manufactureDate + ", expireDate="
 				+ expireDate + ", enabled=" + enabled + ", initialStock=" + initialStock + "]";
 	}
-
-
-
-
-
 }

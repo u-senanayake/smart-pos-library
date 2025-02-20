@@ -124,22 +124,31 @@ public class UsersDTO {
 	public CreatedUpdatedUserDTO getCreatedUser() {
 		return createdUser;
 	}
+
 	public void setCreatedUser(CreatedUpdatedUserDTO createdUser) {
 		this.createdUser = createdUser;
 	}
+
 	public CreatedUpdatedUserDTO getUpdatedUser() {
 		return updatedUser;
 	}
+
 	public void setUpdatedUser(CreatedUpdatedUserDTO updatedUser) {
 		this.updatedUser = updatedUser;
 	}
+
 	public CreatedUpdatedUserDTO getDeletedUser() {
 		return deletedUser;
 	}
+
 	public void setDeletedUser(CreatedUpdatedUserDTO deletedUser) {
 		this.deletedUser = deletedUser;
 	}
-	
+
+	public UsersDTO() {
+		super();
+	}
+
 	public UsersDTO(Integer userId, String username, String firstName, String lastName, String email, String address,
 			String phoneNo1, String phoneNo2, RoleDTO role, boolean enabled, boolean locked, boolean deleted,
 			LocalDateTime createdAt, LocalDateTime updatedAt, LocalDateTime deletedAt,
@@ -163,9 +172,6 @@ public class UsersDTO {
 		this.createdUser = createdUser;
 		this.updatedUser = updatedUser;
 		this.deletedUser = deletedUser;
-	}
-	public UsersDTO() {
-		super();
 	}
 
 

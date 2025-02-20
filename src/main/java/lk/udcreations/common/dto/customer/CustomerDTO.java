@@ -2,12 +2,13 @@ package lk.udcreations.common.dto.customer;
 
 import java.time.LocalDateTime;
 
-import lk.udcreations.common.dto.customergroup.CustomerCustomerGroupDTO;
+import lk.udcreations.common.dto.customergroup.CustomerGroupDTO;
 import lk.udcreations.common.dto.user.CreatedUpdatedUserDTO;
 
 public class CustomerDTO {
 
-	private CustomerCustomerGroupDTO customerGroup;
+//	private CustomerCustomerGroupDTO customerGroup;
+	private CustomerGroupDTO customerGroup;
 
 	private Integer customerId;
 	private String username;
@@ -36,10 +37,6 @@ public class CustomerDTO {
 		this.username = username;
 	}
 
-	public CustomerCustomerGroupDTO getCustomerGroup() {
-		return customerGroup;
-	}
-
 	public Integer getCustomerId() {
 		return customerId;
 	}
@@ -48,9 +45,14 @@ public class CustomerDTO {
 		this.customerId = customerId;
 	}
 
-	public void setCustomerGroup(CustomerCustomerGroupDTO customerGroup) {
+	public CustomerGroupDTO getCustomerGroup() {
+		return customerGroup;
+	}
+
+	public void setCustomerGroup(CustomerGroupDTO customerGroup) {
 		this.customerGroup = customerGroup;
 	}
+
 	public String getFirstName() {
 		return firstName;
 	}
@@ -136,7 +138,7 @@ public class CustomerDTO {
 		this.deletedUser = deletedUser;
 	}
 
-	public CustomerDTO(CustomerCustomerGroupDTO customerGroup, Integer customerId, String username, String firstName,
+	public CustomerDTO(CustomerGroupDTO customerGroup, Integer customerId, String username, String firstName,
 			String lastName, String email, String phoneNo1, String address, boolean enabled, boolean locked,
 			boolean deleted, LocalDateTime createdAt, LocalDateTime updatedAt, LocalDateTime deletedAt,
 			CreatedUpdatedUserDTO createdUser, CreatedUpdatedUserDTO updatedUser, CreatedUpdatedUserDTO deletedUser) {

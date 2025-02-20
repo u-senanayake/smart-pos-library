@@ -4,9 +4,9 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-import lk.udcreations.common.dto.category.ProductCategoryDTO;
-import lk.udcreations.common.dto.distributor.ProductDistributerDTO;
-import lk.udcreations.common.dto.inventory.ProductInventoryDTO;
+import lk.udcreations.common.dto.category.CategoryDTO;
+import lk.udcreations.common.dto.distributor.DistributorDTO;
+import lk.udcreations.common.dto.inventory.InventoryDTO;
 import lk.udcreations.common.dto.user.CreatedUpdatedUserDTO;
 
 public class ProductDTO {
@@ -17,9 +17,13 @@ public class ProductDTO {
 	private String productName;
 	private String description;
 
-	private ProductCategoryDTO category;
-	private ProductDistributerDTO distributor;
-	private ProductInventoryDTO inventory;
+//	private ProductCategoryDTO category;
+//	private ProductDistributerDTO distributor;
+//	private ProductInventoryDTO inventory;
+
+	private CategoryDTO category;
+	private DistributorDTO distributor;
+	private InventoryDTO inventory;
 
 	private BigDecimal price;
 	private BigDecimal costPrice;
@@ -67,28 +71,53 @@ public class ProductDTO {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public ProductCategoryDTO getCategory() {
+//	public ProductCategoryDTO getCategory() {
+//		return category;
+//	}
+//	public void setCategory(ProductCategoryDTO category) {
+//		this.category = category;
+//	}
+//
+//	public ProductDistributerDTO getDistributor() {
+//		return distributor;
+//	}
+//
+//	public void setDistributor(ProductDistributerDTO distributor) {
+//		this.distributor = distributor;
+//	}
+//	public ProductInventoryDTO getInventory() {
+//		return inventory;
+//	}
+//	public void setInventory(ProductInventoryDTO inventory) {
+//		this.inventory = inventory;
+//	}
+
+	public BigDecimal getPrice() {
+		return price;
+	}
+
+	public CategoryDTO getCategory() {
 		return category;
 	}
-	public void setCategory(ProductCategoryDTO category) {
+
+	public void setCategory(CategoryDTO category) {
 		this.category = category;
 	}
 
-	public ProductDistributerDTO getDistributor() {
+	public DistributorDTO getDistributor() {
 		return distributor;
 	}
 
-	public void setDistributor(ProductDistributerDTO distributor) {
+	public void setDistributor(DistributorDTO distributor) {
 		this.distributor = distributor;
 	}
-	public ProductInventoryDTO getInventory() {
+
+	public InventoryDTO getInventory() {
 		return inventory;
 	}
-	public void setInventory(ProductInventoryDTO inventory) {
+
+	public void setInventory(InventoryDTO inventory) {
 		this.inventory = inventory;
-	}
-	public BigDecimal getPrice() {
-		return price;
 	}
 	public void setPrice(BigDecimal price) {
 		this.price = price;

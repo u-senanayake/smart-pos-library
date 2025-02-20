@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import lk.udcreations.common.dto.customer.SaleCustomerDTO;
+import lk.udcreations.common.dto.customer.CustomerDTO;
 import lk.udcreations.common.dto.payment.SalePaymentDTO;
 import lk.udcreations.common.dto.salesitems.SalesItemDTO;
 import lk.udcreations.common.dto.user.CreatedUpdatedUserDTO;
@@ -13,7 +13,8 @@ public class SaleDTO {
 
 	private Integer saleId;
 	private CreatedUpdatedUserDTO createdUser;
-	private SaleCustomerDTO customer;
+//	private SaleCustomerDTO customer;
+	private CustomerDTO customer;
 
 	private BigDecimal totalAmount;
 	private int totalItemCount;
@@ -42,16 +43,25 @@ public class SaleDTO {
 		this.createdUser = createdUser;
 	}
 
-	public SaleCustomerDTO getCustomer() {
-		return customer;
-	}
+//	public SaleCustomerDTO getCustomer() {
+//		return customer;
+//	}
+//
+//	public void setCustomer(SaleCustomerDTO customer) {
+//		this.customer = customer;
+//	}
 
-	public void setCustomer(SaleCustomerDTO customer) {
-		this.customer = customer;
-	}
 
 	public BigDecimal getTotalAmount() {
 		return totalAmount;
+	}
+
+	public CustomerDTO getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(CustomerDTO customer) {
+		this.customer = customer;
 	}
 
 	public void setTotalAmount(BigDecimal totalAmount) {
