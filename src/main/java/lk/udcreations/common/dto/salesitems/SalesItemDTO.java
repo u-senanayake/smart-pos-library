@@ -8,10 +8,7 @@ public class SalesItemDTO {
 
 	private Integer salesItemId;
 	private Integer saleId;
-
-//	private SalesItemsProductDTO product;
 	private ProductDTO product;
-
 	private int quantity;
 	private int returnedQuantity;
 	private BigDecimal pricePerunit;
@@ -31,14 +28,6 @@ public class SalesItemDTO {
 	public void setSaleId(Integer saleId) {
 		this.saleId = saleId;
 	}
-
-//	public SalesItemsProductDTO getProduct() {
-//		return product;
-//	}
-//
-//	public void setProduct(SalesItemsProductDTO product) {
-//		this.product = product;
-//	}
 
 	public int getQuantity() {
 		return quantity;
@@ -86,8 +75,4 @@ public class SalesItemDTO {
 	public void setReturnedQuantity(int returnedQuantity) {
 		this.returnedQuantity = returnedQuantity;
 	}
-
-
-
-
 }

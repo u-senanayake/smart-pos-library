@@ -2,7 +2,7 @@ package lk.udcreations.common.dto.payment;
 
 import java.math.BigDecimal;
 
-public class SalePaymentDTO {
+public class PaymentDTO {
 
 	private Integer paymentId;
 	private Integer saleId;
@@ -95,7 +95,7 @@ public class SalePaymentDTO {
 		this.dueAmount = dueAmount;
 	}
 
-	public SalePaymentDTO(Integer paymentId, Integer saleId, BigDecimal cashAmount, BigDecimal cCardAmount,
+	public PaymentDTO(Integer paymentId, Integer saleId, BigDecimal cashAmount, BigDecimal cCardAmount,
 			String cCardRef, BigDecimal qrAmount, String qrRef, BigDecimal chequeAmount, String chequeRef,
 			BigDecimal dueAmount) {
 		super();
@@ -109,6 +109,10 @@ public class SalePaymentDTO {
 		this.chequeAmount = chequeAmount;
 		this.chequeRef = chequeRef;
 		this.dueAmount = dueAmount;
+	}
+
+	public PaymentDTO() {
+		super();
 	}
 
 }

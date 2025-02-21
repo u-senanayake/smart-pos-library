@@ -2,14 +2,14 @@ package lk.udcreations.common.dto.sale;
 
 import java.math.BigDecimal;
 
-import lk.udcreations.common.dto.payment.SalePaymentDTO;
+import lk.udcreations.common.dto.payment.PaymentDTO;
 
 public class FinalizeSaleDTO {
 
 	private Integer customerId;
 	private BigDecimal totalAmount;
 	private int totalItemCount;
-	private SalePaymentDTO payment;
+	private PaymentDTO payment;
 	
 	public Integer getCustomerId() {
 		return customerId;
@@ -29,10 +29,10 @@ public class FinalizeSaleDTO {
 	public void setTotalItemCount(int totalItemCount) {
 		this.totalItemCount = totalItemCount;
 	}
-	public SalePaymentDTO getPayment() {
+	public PaymentDTO getPayment() {
 		return payment;
 	}
-	public void setPayment(SalePaymentDTO payment) {
+	public void setPayment(PaymentDTO payment) {
 		this.payment = payment;
 	}
 

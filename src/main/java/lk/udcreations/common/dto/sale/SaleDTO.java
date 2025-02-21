@@ -5,17 +5,13 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 import lk.udcreations.common.dto.customer.CustomerDTO;
-import lk.udcreations.common.dto.payment.SalePaymentDTO;
+import lk.udcreations.common.dto.payment.PaymentDTO;
 import lk.udcreations.common.dto.salesitems.SalesItemDTO;
 import lk.udcreations.common.dto.user.CreatedUpdatedUserDTO;
 
 public class SaleDTO {
 
 	private Integer saleId;
-	private CreatedUpdatedUserDTO createdUser;
-//	private SaleCustomerDTO customer;
-	private CustomerDTO customer;
-
 	private BigDecimal totalAmount;
 	private int totalItemCount;
 	private LocalDateTime saleDateTime;
@@ -23,9 +19,11 @@ public class SaleDTO {
 	private LocalDateTime createdAt;
 	private LocalDateTime updatedAt;
 
-	private List<SalesItemDTO> salesItems;
+	private CreatedUpdatedUserDTO createdUser;
+	private CustomerDTO customer;
+	private PaymentDTO payment;
 
-	private SalePaymentDTO payment;
+	private List<SalesItemDTO> salesItems;
 
 	public Integer getSaleId() {
 		return saleId;
@@ -35,33 +33,8 @@ public class SaleDTO {
 		this.saleId = saleId;
 	}
 
-	public CreatedUpdatedUserDTO getCreatedUser() {
-		return createdUser;
-	}
-
-	public void setCreatedUser(CreatedUpdatedUserDTO createdUser) {
-		this.createdUser = createdUser;
-	}
-
-//	public SaleCustomerDTO getCustomer() {
-//		return customer;
-//	}
-//
-//	public void setCustomer(SaleCustomerDTO customer) {
-//		this.customer = customer;
-//	}
-
-
 	public BigDecimal getTotalAmount() {
 		return totalAmount;
-	}
-
-	public CustomerDTO getCustomer() {
-		return customer;
-	}
-
-	public void setCustomer(CustomerDTO customer) {
-		this.customer = customer;
 	}
 
 	public void setTotalAmount(BigDecimal totalAmount) {
@@ -108,20 +81,36 @@ public class SaleDTO {
 		this.updatedAt = updatedAt;
 	}
 
+	public CreatedUpdatedUserDTO getCreatedUser() {
+		return createdUser;
+	}
+
+	public void setCreatedUser(CreatedUpdatedUserDTO createdUser) {
+		this.createdUser = createdUser;
+	}
+
+	public CustomerDTO getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(CustomerDTO customer) {
+		this.customer = customer;
+	}
+
+	public PaymentDTO getPayment() {
+		return payment;
+	}
+
+	public void setPayment(PaymentDTO payment) {
+		this.payment = payment;
+	}
+
 	public List<SalesItemDTO> getSalesItems() {
 		return salesItems;
 	}
 
 	public void setSalesItems(List<SalesItemDTO> salesItems) {
 		this.salesItems = salesItems;
-	}
-
-	public SalePaymentDTO getPayment() {
-		return payment;
-	}
-
-	public void setPayment(SalePaymentDTO payment) {
-		this.payment = payment;
 	}
 
 
