@@ -43,5 +43,5 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t your-dockerhub-username/${{ github.event.repository.name }}:${{ github.sha }} .
+          docker build -t udayanga91/smartpos-common-lib:${{ github.sha }} .
           docker push udayanga91/smartpos-common-lib:${{ github.sha }}
