@@ -44,4 +44,4 @@ jobs:
       - name: Build and Push Docker Image
         run: |
           docker build -t your-dockerhub-username/${{ github.event.repository.name }}:${{ github.sha }} .
-          docker push your-dockerhub-username/${{ github.event.repository.name }}:${{ github.sha }}
+          docker push udayanga91/${{ github.event.repository.name }}:${{ github.sha }}
