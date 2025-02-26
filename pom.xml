@@ -113,5 +113,20 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	 
+	<distributionManagement>
+    	<repository>
+      		<id>github</id>
+      		<name>GitHub UDCreations Apache Maven Packages</name>
+      		<url>https://maven.pkg.github.com/UD-Creations/smartpos-common-lib</url>
+    	</repository>
+  	</distributionManagement>
+  	<repositories>
+    	<repository>
+      		<id>github</id>
+      		<name>GitHub UDCreations Apache Maven Packages</name>
+      		<url>https://maven.pkg.github.com/UD-Creations/smartpos-common-lib</url>
+    	</repository>
+  	</repositories>
+  	
 </project>

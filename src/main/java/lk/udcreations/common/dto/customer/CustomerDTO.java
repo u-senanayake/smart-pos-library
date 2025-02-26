@@ -7,7 +7,6 @@ import lk.udcreations.common.dto.user.CreatedUpdatedUserDTO;
 
 public class CustomerDTO {
 
-//	private CustomerCustomerGroupDTO customerGroup;
 	private CustomerGroupDTO customerGroup;
 
 	private Integer customerId;
