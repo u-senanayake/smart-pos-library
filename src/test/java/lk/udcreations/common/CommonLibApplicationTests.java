@@ -1,13 +1,12 @@
-package lk.udcreations.common;
+// package lk.udcreations.common;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+// import org.junit.jupiter.api.Test;
 
-@SpringBootTest
-class CommonLibApplicationTests {
+// // @SpringBootTest
+// class CommonLibApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+// 	@Test
+// 	void contextLoads() {
+// 	}
 
-}
+// }

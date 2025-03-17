@@ -1,13 +1,11 @@
 package lk.udcreations.common;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
+// @SpringBootApplication
 public class CommonLibApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CommonLibApplication.class, args);
+		//SpringApplication.run(CommonLibApplication.class, args);
+		System.out.println("CommonLibApplication is running as a plain Java application.");
 	}
 
 }
