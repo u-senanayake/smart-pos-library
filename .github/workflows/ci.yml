@@ -9,7 +9,6 @@ on:
   pull_request:
     branches:
       - main
-
 jobs:
   build:
     # Skip workflow if commit message contains [skip ci]
