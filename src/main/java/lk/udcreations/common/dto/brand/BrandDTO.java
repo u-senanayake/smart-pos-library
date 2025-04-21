@@ -108,4 +108,5 @@ public class BrandDTO {
 		this.deletedUser = deletedUser;
 	}
 
+	
 }
