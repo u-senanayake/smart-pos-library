@@ -4,9 +4,9 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>lk.udcreations</groupId>
-	<artifactId>common-lib</artifactId>
-	<version>2.0.0</version>
-	<name>common-lib</name>
+	<artifactId>smart-pos-library</artifactId>
+	<version>0.0.1</version>
+	<name>smart-pos-library</name>
 	<description>POS system common libraries </description>
 	<url/>
 
@@ -39,9 +39,9 @@
 
 	<distributionManagement>
     	<repository>
-      		<id>github-common-lib</id>
+      		<id>smart-pos-library</id>
       		<name>GitHub UDCreations Apache Maven Packages</name>
-      		<url>https://maven.pkg.github.com/UD-Creations/smartpos-common-lib</url>
+      		<url>https://maven.pkg.github.com/u-senanayake/smart-pos-library</url>
     	</repository>
   	</distributionManagement>
 
