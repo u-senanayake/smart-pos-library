@@ -16,7 +16,8 @@ public class StockDTO {
 		super();
 		this.quantity = quantity;
 	}
-	
-	
 
+	public StockDTO() {
+		super();
+	}
 }
