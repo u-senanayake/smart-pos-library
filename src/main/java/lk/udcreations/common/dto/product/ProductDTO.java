@@ -17,6 +17,8 @@ public class ProductDTO {
 	private String productName;
 	private String description;
 
+	private String imageUrl;
+
 //	private ProductCategoryDTO category;
 //	private ProductDistributerDTO distributor;
 //	private ProductInventoryDTO inventory;
@@ -195,5 +197,13 @@ public class ProductDTO {
 	}
 	public void setDeletedUser(CreatedUpdatedUserDTO deletedUser) {
 		this.deletedUser = deletedUser;
+	}
+
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
 	}
 }
