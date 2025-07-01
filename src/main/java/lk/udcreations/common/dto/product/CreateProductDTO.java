@@ -13,6 +13,7 @@ public class CreateProductDTO {
 	private BigDecimal price;
 	private BigDecimal costPrice;
 	private BigDecimal minPrice;
+	private String imageUrl;
 	private Integer stockWarningLevel;
 	private Integer stockAlertLevel;
 	private String manufactureDate;
@@ -82,6 +83,13 @@ public class CreateProductDTO {
 		return minPrice;
 	}
 
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
+	}
 
 	public void setMinPrice(BigDecimal minPrice) {
 		this.minPrice = minPrice;
