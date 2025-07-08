@@ -14,6 +14,8 @@ public class ImageDTO {
 
     private String imageName;
 
+    private String imageSequence;
+
     public Integer getImageId() {
         return imageId;
     }
@@ -61,4 +63,10 @@ public class ImageDTO {
     public void setImageName(String imageName) {
         this.imageName = imageName;
     }
+
+    public String getImageSequence() {
+        return imageSequence;
+    }
+    public void setImageSequence(String imageSequence) {
+        this.imageSequence = imageSequence;
 }
