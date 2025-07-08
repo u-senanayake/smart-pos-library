@@ -69,4 +69,5 @@ public class ImageDTO {
     }
     public void setImageSequence(String imageSequence) {
         this.imageSequence = imageSequence;
+    }
 }
