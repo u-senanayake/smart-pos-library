@@ -1,5 +1,7 @@
 package lk.udcreations.common.dto.role;
 
+import lk.udcreations.common.dto.file.ImageDTO;
+
 import java.time.LocalDateTime;
 
 public class RoleDTO {
@@ -10,6 +12,8 @@ public class RoleDTO {
 
 	private boolean enabled;
 	private boolean deleted;
+
+	private ImageDTO image;;
 
 	private LocalDateTime createdAt;
 	private LocalDateTime updatedAt;
@@ -79,7 +83,13 @@ public class RoleDTO {
 		this.deletedAt = deletedAt;
 	}
 
+	public ImageDTO getImage() {
+		return image;
+	}
 
+	public void setImage(ImageDTO image) {
+		this.image = image;
+	}
 
 	public RoleDTO(Integer roleId, String roleName, String description, boolean enabled) {
 		super();

@@ -2,6 +2,7 @@ package lk.udcreations.common.dto.user;
 
 import java.time.LocalDateTime;
 
+import lk.udcreations.common.dto.file.ImageDTO;
 import lk.udcreations.common.dto.role.RoleDTO;
 
 
@@ -17,6 +18,7 @@ public class UsersDTO {
 	private String phoneNo2;
 
 	private RoleDTO role;
+	private ImageDTO image;;
 
 	private boolean enabled = true;
 	private boolean locked = false;
@@ -143,6 +145,14 @@ public class UsersDTO {
 
 	public void setDeletedUser(CreatedUpdatedUserDTO deletedUser) {
 		this.deletedUser = deletedUser;
+	}
+
+	public ImageDTO getImage() {
+		return image;
+	}
+
+	public void setImage(ImageDTO image) {
+		this.image = image;
 	}
 
 	public UsersDTO() {

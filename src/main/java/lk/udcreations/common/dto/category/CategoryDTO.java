@@ -2,6 +2,7 @@ package lk.udcreations.common.dto.category;
 
 import java.time.LocalDateTime;
 
+import lk.udcreations.common.dto.file.ImageDTO;
 import lk.udcreations.common.dto.user.CreatedUpdatedUserDTO;
 
 public class CategoryDTO {
@@ -16,6 +17,8 @@ public class CategoryDTO {
 	private LocalDateTime createdAt;
 	private LocalDateTime updatedAt;
 	private LocalDateTime deletedAt;
+
+	private ImageDTO image;
 
 	private CreatedUpdatedUserDTO createdUser;
 	private CreatedUpdatedUserDTO updatedUser;
@@ -117,6 +120,11 @@ public class CategoryDTO {
 		this.deletedUser = deletedUser;
 	}
 
+	public ImageDTO getImage() {
+		return image;
+	}
 
-
+	public void setImage(ImageDTO image) {
+		this.image = image;
+	}
 }

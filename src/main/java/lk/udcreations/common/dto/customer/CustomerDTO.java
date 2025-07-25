@@ -3,6 +3,7 @@ package lk.udcreations.common.dto.customer;
 import java.time.LocalDateTime;
 
 import lk.udcreations.common.dto.customergroup.CustomerGroupDTO;
+import lk.udcreations.common.dto.file.ImageDTO;
 import lk.udcreations.common.dto.user.CreatedUpdatedUserDTO;
 
 public class CustomerDTO {
@@ -19,6 +20,8 @@ public class CustomerDTO {
 	private boolean enabled = true;
 	private boolean locked = false;
 	private boolean deleted = false;
+
+	private ImageDTO image;
 
 	private LocalDateTime createdAt;
 	private LocalDateTime updatedAt;
@@ -137,10 +140,18 @@ public class CustomerDTO {
 		this.deletedUser = deletedUser;
 	}
 
+	public ImageDTO getImage() {
+		return image;
+	}
+
+	public void setImage(ImageDTO image) {
+		this.image = image;
+	}
+
 	public CustomerDTO(CustomerGroupDTO customerGroup, Integer customerId, String username, String firstName,
-			String lastName, String email, String phoneNo1, String address, boolean enabled, boolean locked,
-			boolean deleted, LocalDateTime createdAt, LocalDateTime updatedAt, LocalDateTime deletedAt,
-			CreatedUpdatedUserDTO createdUser, CreatedUpdatedUserDTO updatedUser, CreatedUpdatedUserDTO deletedUser) {
+					   String lastName, String email, String phoneNo1, String address, boolean enabled, boolean locked,
+					   boolean deleted, LocalDateTime createdAt, LocalDateTime updatedAt, LocalDateTime deletedAt,
+					   CreatedUpdatedUserDTO createdUser, CreatedUpdatedUserDTO updatedUser, CreatedUpdatedUserDTO deletedUser) {
 		super();
 		this.customerGroup = customerGroup;
 		this.customerId = customerId;
