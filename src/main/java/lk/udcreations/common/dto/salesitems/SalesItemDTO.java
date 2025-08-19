@@ -11,7 +11,7 @@ public class SalesItemDTO {
 	private ProductDTO product;
 	private int quantity;
 	private int returnedQuantity;
-	private BigDecimal pricePerunit;
+	private BigDecimal pricePerUnit;
 	private BigDecimal itemDiscountVal;
 	private int itemDiscountPer;
 	private BigDecimal totalPrice;
@@ -43,11 +43,11 @@ public class SalesItemDTO {
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
-	public BigDecimal getPricePerunit() {
-		return pricePerunit;
+	public BigDecimal getPricePerUnit() {
+		return pricePerUnit;
 	}
-	public void setPricePerunit(BigDecimal pricePerunit) {
-		this.pricePerunit = pricePerunit;
+	public void setPricePerUnit(BigDecimal pricePerUnit) {
+		this.pricePerUnit = pricePerUnit;
 	}
 	public BigDecimal getItemDiscountVal() {
 		return itemDiscountVal;
